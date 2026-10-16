@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="container"><img class="img-fluid" src="{{ photo.pic_url }}" alt="Concert in {{ photo.event_city }}"><h2>{{ photo.event_city }}, {{ photo.event_state }}</h2><p>{{ photo.event_country }} · {{ photo.event_date }}</p><a href="{% url 'photos' %}">Back to photos</a></div>{% endblock %}

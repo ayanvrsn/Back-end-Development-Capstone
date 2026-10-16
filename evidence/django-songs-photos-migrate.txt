@@ -1,0 +1,9 @@
+$ /Users/ayan/Documents/Codex/2026-10-04/d/backend-capstone/.venv/bin/python manage.py makemigrations concert
+Migrations for 'concert':
+  concert/migrations/0001_initial.py
+    + Create model Photo
+    + Create model Song
+    + Create model Concert
+    + Create model ConcertAttending
+
+Exit code: 0
