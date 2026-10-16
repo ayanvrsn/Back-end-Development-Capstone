@@ -47,13 +47,9 @@
             <li>
               <a class="nav-link scrollto" href="{% url 'photos' %}">Photos</a>
             </li>
-            {% if request.user.is_authenticated %}
             <li>
-              <a class="nav-link scrollto o" href="{% url 'concerts' %}"
-                >Concerts</a
-              >
+              <a class="nav-link scrollto o" href="{% url 'concerts' %}">Concerts</a>
             </li>
-            {% endif%}
           </ul>
 
           <ul>
