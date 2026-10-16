@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "development-only-change-in-pro
 DEBUG = os.environ.get("DJANGO_DEBUG", "1") == "1"
 
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,testserver,.cognitiveclass.ai').split(',')
-CSRF_TRUSTED_ORIGINS = ['https://*.cognitiveclass.ai']
+CSRF_TRUSTED_ORIGINS = os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS', 'https://*.cognitiveclass.ai,https://*.skills.network').split(',')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition
 
